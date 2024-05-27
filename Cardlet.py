@@ -43,7 +43,7 @@ class Cardlet(tk.Frame):
         self.cards_label.place(x=0, y=1, relwidth=1, relheight=1)
 
         self.card_current = tk.Label(self.card_frame, bg="black", fg="white", bd=3)
-        self.card_current["text"] = f"{self.current}/{len(self.cards) - 1}"
+        self.card_current["text"] = f"{self.current + 1}/{len(self.cards)}"
         self.card_current.place(x=0, y=0)
 
     def control_widgets(self):
@@ -57,7 +57,7 @@ class Cardlet(tk.Frame):
         else:
             self.current = 0
         self.cards_label["text"] = self.cards[self.current]["text"]
-        self.card_current["text"] = f"{self.current}/{len(self.cards) - 1}"
+        self.card_current["text"] = f"{self.current + 1}/{len(self.cards)}"
 
     def prev_card(self, event=None):
         if self.current > 0:
@@ -65,7 +65,7 @@ class Cardlet(tk.Frame):
         else:
             self.current = len(self.cards) - 1
         self.cards_label["text"] = self.cards[self.current]["text"]
-        self.card_current["text"] = f"{self.current}/{len(self.cards) - 1}"
+        self.card_current["text"] = f"{self.current + 1}/{len(self.cards)}"
 
     def turn_card(self, event=None):
         if self.back:
@@ -101,7 +101,7 @@ class Cardlet(tk.Frame):
         except FileNotFoundError:
             return []
         self.current = 0
-        self.card_current["text"] = f"{self.current}/{len(self.cards) - 1}"
+        self.card_current["text"] = f"{self.current + 1}/{len(self.cards)}"
         self.cards_label["text"] = self.cards[self.current]["text"]
 
 
