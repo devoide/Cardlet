@@ -46,10 +46,58 @@ class Cardlet(tk.Frame):
         self.card_current["text"] = f"{self.current + 1}/{len(self.cards)}"
         self.card_current.place(x=0, y=0)
 
+    def write_window(self):
+        self.new_window = tk.Toplevel(self.master)
+        self.new_window.title("Write")
+        self.new_window.geometry("400x200")
+
+        self.current = 0
+        self.card_current_write = tk.Label(self.new_window)
+        self.card_current_write["text"] = f"{self.current + 1}/{len(self.cards)}"
+        self.card_current_write.pack()
+
+        self.card_label_write = tk.Label(self.new_window, bd=3)
+        self.card_label_write["text"] = self.cards[self.current]["text"]
+        self.card_label_write.pack()
+
+
+        self.entry = tk.Entry(self.new_window, width=20)
+        self.entry.pack()
+        self.entry.focus_set()
+
+        self.answer_label = tk.Label(self.new_window)
+        self.answer_label.pack()
+
+        self.next_button = tk.Button(self.new_window, text="Next")
+        self.next_button["command"] = self.next_card
+        self.next_button.pack(side="right", padx=5, pady=5)
+
+        self.prev_button = tk.Button(self.new_window, text="Prev")
+        self.prev_button["command"] = self.prev_card
+        self.prev_button.pack(side="left", padx=5, pady=5)
+
+        self.entry.bind("<Return>", self.check_answer)
+        self.new_window.bind("<Right>", self.next_card)
+        self.new_window.bind("<Left>", self.prev_card)
+
+    def check_answer(self, event=None):
+        text = self.entry.get()
+        answer = self.cards[self.current]["definition"].strip().lower()
+        if text.strip().lower() == answer:
+            self.answer_label.config(fg="lime", font=("Helvetica", 9, "bold"))
+            self.answer_label["text"] = "Richtig!"
+        else:
+            self.answer_label.config(fg="red", font=("Helvetica", 9, "bold"))
+            self.answer_label["text"] = f"Falsch: {answer}"
+
     def control_widgets(self):
         self.download_button = tk.Button(self.controls, text="Download")
         self.download_button["command"] = self.add_file
-        self.download_button.grid(row=0, column=1)
+        self.download_button.grid(row=0, column=0)
+
+        self.write_button = tk.Button(self.controls, text="Write")
+        self.write_button["command"] = self.write_window
+        self.write_button.grid(row=0, column=1)
 
     def next_card(self, event=None):
         if self.current < len(self.cards) - 1:
@@ -59,6 +107,13 @@ class Cardlet(tk.Frame):
         self.cards_label["text"] = self.cards[self.current]["text"]
         self.card_current["text"] = f"{self.current + 1}/{len(self.cards)}"
 
+        try:
+            self.card_label_write["text"] = self.cards[self.current]["text"]
+            self.answer_label["text"] = ""
+            self.card_current_write["text"] = f"{self.current + 1}/{len(self.cards)}"
+        except (tk.TclError, AttributeError) as e:
+            pass
+
     def prev_card(self, event=None):
         if self.current > 0:
             self.current -= 1
@@ -67,6 +122,13 @@ class Cardlet(tk.Frame):
         self.cards_label["text"] = self.cards[self.current]["text"]
         self.card_current["text"] = f"{self.current + 1}/{len(self.cards)}"
 
+        try:
+            self.card_label_write["text"] = self.cards[self.current]["text"]
+            self.answer_label["text"] = ""
+            self.card_current_write["text"] = f"{self.current + 1}/{len(self.cards)}"
+        except (tk.TclError, AttributeError) as e:
+            pass
+
     def turn_card(self, event=None):
         if self.back:
             self.back = False
@@ -74,7 +136,6 @@ class Cardlet(tk.Frame):
         else:
             self.back = True
             self.cards_label["text"] = self.cards[self.current]["definition"]
-
 
     def add_file(self):
         """
@@ -103,8 +164,6 @@ class Cardlet(tk.Frame):
         self.current = 0
         self.card_current["text"] = f"{self.current + 1}/{len(self.cards)}"
         self.cards_label["text"] = self.cards[self.current]["text"]
-
-
 
 
 if __name__ == '__main__':
