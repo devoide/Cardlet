@@ -30,5 +30,745 @@
     {
         "text": " die Handlung",
         "definition": " l'action"
+    },
+    {
+        "text": "ansehen",
+        "definition": " regarder "
+    },
+    {
+        "text": " der Dialog",
+        "definition": " le dialogue "
+    },
+    {
+        "text": " der Monolog",
+        "definition": " le monologue "
+    },
+    {
+        "text": " inszenieren, Regie f\u00fchren bei",
+        "definition": " mettre en sc\u00e8ne "
+    },
+    {
+        "text": " die Kom\u00f6die",
+        "definition": " la com\u00e9die "
+    },
+    {
+        "text": " die Trag\u00f6die",
+        "definition": " la trag\u00e9die "
+    },
+    {
+        "text": " das Drama",
+        "definition": " le drame "
+    },
+    {
+        "text": " der Akt",
+        "definition": " l'acte "
+    },
+    {
+        "text": "die Szene, die B\u00fchne",
+        "definition": " la sc\u00e8ne "
+    },
+    {
+        "text": " das Ballett",
+        "definition": " le ballet "
+    },
+    {
+        "text": " der Tanz",
+        "definition": " la danse "
+    },
+    {
+        "text": " der Filmemacher, die Filmemacherin",
+        "definition": " le cin\u00e9aste "
+    },
+    {
+        "text": " einen Film drehen",
+        "definition": " tourner un film "
+    },
+    {
+        "text": " die Rolle",
+        "definition": " le r\u00f4le "
+    },
+    {
+        "text": " das Kost\u00fcm",
+        "definition": " le costume "
+    },
+    {
+        "text": " die Leinwand",
+        "definition": " l'\u00e9cran "
+    },
+    {
+        "text": " das Publikum",
+        "definition": " le public "
+    },
+    {
+        "text": " der Zuschauer, die Zuschauerin",
+        "definition": " le spectateur, la spectatrice "
+    },
+    {
+        "text": " der Applaus, der Beifall",
+        "definition": " les applaudissements "
+    },
+    {
+        "text": " klatschen",
+        "definition": " applaudir "
+    },
+    {
+        "text": " der Star",
+        "definition": " la vedette "
+    },
+    {
+        "text": " der Spielfilm",
+        "definition": " le long m\u00e9trage "
+    },
+    {
+        "text": " der Kurzfilm",
+        "definition": " le court m\u00e9trage "
+    },
+    {
+        "text": "das Fest",
+        "definition": " la f\u00eate "
+    },
+    {
+        "text": " feiern",
+        "definition": " f\u00eater "
+    },
+    {
+        "text": " der Geburtstag",
+        "definition": " l'anniversaire "
+    },
+    {
+        "text": " Viel Gl\u00fcck!",
+        "definition": " Bon courage! "
+    },
+    {
+        "text": " Herzlichen Gl\u00fcckwunsch!",
+        "definition": " Toutes mes f\u00e9licitations ! "
+    },
+    {
+        "text": " das Geschenk",
+        "definition": " le cadeau "
+    },
+    {
+        "text": " schenken",
+        "definition": " offrir "
+    },
+    {
+        "text": " gratulieren, begl\u00fcckw\u00fcnschen",
+        "definition": " f\u00e9liciter "
+    },
+    {
+        "text": " gro\u00dfartig",
+        "definition": " superbe "
+    },
+    {
+        "text": " toll",
+        "definition": " formidable "
+    },
+    {
+        "text": " klasse",
+        "definition": " chouette "
+    },
+    {
+        "text": " gro\u00dfartig",
+        "definition": " magnifique "
+    },
+    {
+        "text": " Frohe Weihnachten!",
+        "definition": " Joyeux No\u00ebl! "
+    },
+    {
+        "text": " Frohe Ostern!",
+        "definition": " Joyeuses P\u00e2ques! "
+    },
+    {
+        "text": " Frohes neues Jahr!",
+        "definition": " Bonne ann\u00e9e! "
+    },
+    {
+        "text": " der Gastgeber, die Gastgeberin",
+        "definition": " l'h\u00f4te, l'h\u00f4tesse "
+    },
+    {
+        "text": " empfangen",
+        "definition": " accueillir "
+    },
+    {
+        "text": " herzlich",
+        "definition": " chaleureux, chaleureuse "
+    },
+    {
+        "text": " der Anlass",
+        "definition": " l'occasion "
+    },
+    {
+        "text": " der Hochzeitstag",
+        "definition": " l'anniversaire de mariage "
+    },
+    {
+        "text": " die Taufe",
+        "definition": " le bapt\u00eame "
+    },
+    {
+        "text": " das hundertj\u00e4hrige Jubil\u00e4um",
+        "definition": " le centenaire "
+    },
+    {
+        "text": " verpacken",
+        "definition": " envelopper "
+    },
+    {
+        "text": " die Dekoration",
+        "definition": " la d\u00e9coration "
+    },
+    {
+        "text": " schm\u00fccken, dekorieren",
+        "definition": " d\u00e9corer "
+    },
+    {
+        "text": " das Ereignis",
+        "definition": " l'\u00e9v\u00e9nement "
+    },
+    {
+        "text": " stattfinden",
+        "definition": " avoir lieu "
+    },
+    {
+        "text": " die Kirmes",
+        "definition": " la kermesse "
+    },
+    {
+        "text": " der Zirkus",
+        "definition": " le cirque "
+    },
+    {
+        "text": " der Flohmarkt",
+        "definition": " le march\u00e9 aux puces "
+    },
+    {
+        "text": " das Feuerwerk",
+        "definition": " le feu d'artifice "
+    },
+    {
+        "text": " die Menschenmenge",
+        "definition": " la foule "
+    },
+    {
+        "text": " die Tradition",
+        "definition": " la tradition "
+    },
+    {
+        "text": " traditionell",
+        "definition": " traditionnel, traditionnelle "
+    },
+    {
+        "text": " der Brauch, die Sitte",
+        "definition": " la coutume "
+    },
+    {
+        "text": " der Nationalfeiertag",
+        "definition": " la f\u00eate nationale "
+    },
+    {
+        "text": " Silvester",
+        "definition": " la Saint-Sylvestre "
+    },
+    {
+        "text": " der Neujahrstag",
+        "definition": " le jour de l'an "
+    },
+    {
+        "text": " der Karneval, der Fasching",
+        "definition": " le carnaval "
+    },
+    {
+        "text": " der Karfreitag",
+        "definition": " le Vendredi saint "
+    },
+    {
+        "text": " Ostern",
+        "definition": " P\u00e2ques "
+    },
+    {
+        "text": " Pfingsten",
+        "definition": " la Pentec\u00f4te "
+    },
+    {
+        "text": " Allerheiligen",
+        "definition": " la Toussaint "
+    },
+    {
+        "text": " Weihnachten",
+        "definition": " No\u00ebl "
+    },
+    {
+        "text": " der Heiligabend",
+        "definition": " le r\u00e9veillon (de No\u00ebl) "
+    },
+    {
+        "text": " der Karnevalsdienstag",
+        "definition": " le Mardi gras "
+    },
+    {
+        "text": " der Maifeiertag",
+        "definition": " la F\u00eate du Travail "
+    },
+    {
+        "text": " Mari\u00e4 Himmelfahrt",
+        "definition": " l'Assomption "
+    },
+    {
+        "text": " der Waffenstillstandstag",
+        "definition": " l'Armistice "
+    },
+    {
+        "text": "ausgehen",
+        "definition": " sortir "
+    },
+    {
+        "text": " die Unterhaltung, die Abwechslung",
+        "definition": " la distraction "
+    },
+    {
+        "text": " tanzen",
+        "definition": " danser "
+    },
+    {
+        "text": " die Diskothek",
+        "definition": " la discoth\u00e8que "
+    },
+    {
+        "text": " lustig",
+        "definition": " amusant, amusante "
+    },
+    {
+        "text": " sich lustig machen",
+        "definition": " se moquer "
+    },
+    {
+        "text": " einen trinken gehen",
+        "definition": " boire un verre "
+    },
+    {
+        "text": " genie\u00dfen",
+        "definition": " profiter de "
+    },
+    {
+        "text": " der Witz, der Scherz",
+        "definition": " la plaisanterie "
+    },
+    {
+        "text": " zum Spa\u00df",
+        "definition": " pour plaisanter "
+    },
+    {
+        "text": " das Gel\u00e4chter",
+        "definition": " le rire "
+    },
+    {
+        "text": " der Nachtklub, die Bar",
+        "definition": " la bo\u00eete (de nuit) "
+    },
+    {
+        "text": " die Bar",
+        "definition": " le bar "
+    },
+    {
+        "text": " die Abendgesellschaft",
+        "definition": " la soir\u00e9e "
+    },
+    {
+        "text": " der Tanzabend",
+        "definition": " la soir\u00e9e dansante "
+    },
+    {
+        "text": " der Sport",
+        "definition": " le sport "
+    },
+    {
+        "text": " trainieren",
+        "definition": " s'entra\u00eener "
+    },
+    {
+        "text": " das Rennen",
+        "definition": " la course "
+    },
+    {
+        "text": " laufen, rennen",
+        "definition": " courir "
+    },
+    {
+        "text": " langsam",
+        "definition": " lent, lente "
+    },
+    {
+        "text": " schnell",
+        "definition": " vite "
+    },
+    {
+        "text": " die Turnhalle",
+        "definition": " le gymnase "
+    },
+    {
+        "text": " der Spieler, die Spielerin",
+        "definition": " le joueur, la joueuse "
+    },
+    {
+        "text": " der Ball",
+        "definition": " le ballon "
+    },
+    {
+        "text": " werfen",
+        "definition": " lancer "
+    },
+    {
+        "text": " fangen",
+        "definition": " attraper "
+    },
+    {
+        "text": " der Fu\u00dfball",
+        "definition": " le football "
+    },
+    {
+        "text": " der Wintersport",
+        "definition": " les sports d'hiver "
+    },
+    {
+        "text": " der Ski",
+        "definition": " le ski "
+    },
+    {
+        "text": " Ski fahren",
+        "definition": " skier "
+    },
+    {
+        "text": " Schlitten fahren, rodeln",
+        "definition": " faire de la luge "
+    },
+    {
+        "text": " schwimmen",
+        "definition": " nager "
+    },
+    {
+        "text": " das Schwimmbad",
+        "definition": " la piscine "
+    },
+    {
+        "text": " reiten",
+        "definition": " faire du cheval "
+    },
+    {
+        "text": " joggen",
+        "definition": " faire du jogging "
+    },
+    {
+        "text": " die Wanderung",
+        "definition": " la randonn\u00e9e "
+    },
+    {
+        "text": " wandern",
+        "definition": " faire de la randonn\u00e9e "
+    },
+    {
+        "text": " klettern",
+        "definition": " faire de l'escalade "
+    },
+    {
+        "text": " der Aufstieg",
+        "definition": " la mont\u00e9e "
+    },
+    {
+        "text": " bergsteigen",
+        "definition": " faire de l'alpinisme "
+    },
+    {
+        "text": " das Boulespiel",
+        "definition": " le jeu de boules"
+    },
+    {
+        "text": "das Spiel",
+        "definition": " le match "
+    },
+    {
+        "text": " der Wettkampf",
+        "definition": " la comp\u00e9tition "
+    },
+    {
+        "text": " der Teilnehmer, die Teilnehmerin",
+        "definition": " le concurrent, la concurrente "
+    },
+    {
+        "text": " gewinnen, siegen",
+        "definition": " gagner "
+    },
+    {
+        "text": " der Sieg",
+        "definition": " la victoire "
+    },
+    {
+        "text": " der Sieger, die Siegerin",
+        "definition": " le vainqueur "
+    },
+    {
+        "text": " die Niederlage",
+        "definition": " la d\u00e9faite "
+    },
+    {
+        "text": " schlagen",
+        "definition": " battre "
+    },
+    {
+        "text": " der Verlierer, die Verliererin",
+        "definition": " le perdant, la perdante "
+    },
+    {
+        "text": " verlieren",
+        "definition": " perdre "
+    },
+    {
+        "text": " der Start",
+        "definition": " le d\u00e9part "
+    },
+    {
+        "text": " das Ziel, die Ziellinie",
+        "definition": " la ligne d'arriv\u00e9e "
+    },
+    {
+        "text": " ber\u00fchmt",
+        "definition": " c\u00e9l\u00e8bre "
+    },
+    {
+        "text": " der Sportler, die Sportlerin",
+        "definition": " l'athl\u00e8te "
+    },
+    {
+        "text": " die Leichtathletik",
+        "definition": " l'athl\u00e9tisme "
+    },
+    {
+        "text": " sportlich, fair",
+        "definition": " sportif, sportive "
+    },
+    {
+        "text": " das Training",
+        "definition": " l'entra\u00eenement "
+    },
+    {
+        "text": " das Stadion",
+        "definition": " le stade "
+    },
+    {
+        "text": " die Mannschaft",
+        "definition": " l'\u00e9quipe "
+    },
+    {
+        "text": " die Bewegung",
+        "definition": " le mouvement "
+    },
+    {
+        "text": " fit",
+        "definition": " en forme "
+    },
+    {
+        "text": " die Ausdauer",
+        "definition": " l'endurance "
+    },
+    {
+        "text": " springen",
+        "definition": " sauter "
+    },
+    {
+        "text": " das Tor",
+        "definition": " le but "
+    },
+    {
+        "text": " ein Tor schie\u00dfen, einen Treffer erzielen",
+        "definition": " marquer un but "
+    },
+    {
+        "text": " das Spielfeld",
+        "definition": " le terrain "
+    },
+    {
+        "text": " der Radsport",
+        "definition": " le cyclisme "
+    },
+    {
+        "text": " das Joggen",
+        "definition": " le jogging "
+    },
+    {
+        "text": " Volleyball",
+        "definition": " le volley-ball "
+    },
+    {
+        "text": " Basketball",
+        "definition": " le basket-ball "
+    },
+    {
+        "text": " Handball",
+        "definition": " le handball "
+    },
+    {
+        "text": " Golf",
+        "definition": " le golf "
+    },
+    {
+        "text": " das Tennis",
+        "definition": " le tennis "
+    },
+    {
+        "text": " der Schl\u00e4ger",
+        "definition": " la raquette "
+    },
+    {
+        "text": " das Feldhockey",
+        "definition": " le hockey sur gazon "
+    },
+    {
+        "text": " das Eishockey",
+        "definition": " le hockey sur glace "
+    },
+    {
+        "text": " das Segeln",
+        "definition": " la voile "
+    },
+    {
+        "text": " das Tauchen",
+        "definition": " la plong\u00e9e "
+    },
+    {
+        "text": " das Surfen",
+        "definition": " la planche \u00e0 voile "
+    },
+    {
+        "text": " das Kitesurfen",
+        "definition": " le kitesurf "
+    },
+    {
+        "text": " das Endspiel, das Finale",
+        "definition": " la finale "
+    },
+    {
+        "text": " die Weltmeisterschaft",
+        "definition": " le championnat du monde "
+    },
+    {
+        "text": " die Olympischen Spiele",
+        "definition": " les Jeux olympiques "
+    },
+    {
+        "text": " die Medaille",
+        "definition": " la m\u00e9daille "
+    },
+    {
+        "text": " der Schiedsrichter, die Schiedsrichterin",
+        "definition": " l'arbitre "
+    },
+    {
+        "text": " pfeifen",
+        "definition": " siffler "
+    },
+    {
+        "text": " der Spielstand",
+        "definition": " le score "
+    },
+    {
+        "text": " der Rekord",
+        "definition": " le record "
+    },
+    {
+        "text": " der Erfolg",
+        "definition": " le succ\u00e8s "
+    },
+    {
+        "text": " bekannt",
+        "definition": " connu, connue "
+    },
+    {
+        "text": " spannend",
+        "definition": " passionnant, passionnante "
+    },
+    {
+        "text": " das Foto",
+        "definition": " la photo "
+    },
+    {
+        "text": " fotografieren",
+        "definition": " photographier "
+    },
+    {
+        "text": " die Digitalkamera",
+        "definition": " l'appareil photo num\u00e9rique "
+    },
+    {
+        "text": " der Blitz, das Blitzlicht",
+        "definition": " le flash "
+    },
+    {
+        "text": " das Motiv",
+        "definition": " le motif "
+    },
+    {
+        "text": " das Spiel",
+        "definition": " le jeu "
+    },
+    {
+        "text": " spielen",
+        "definition": " jouer "
+    },
+    {
+        "text": " das Gl\u00fcck",
+        "definition": " la chance "
+    },
+    {
+        "text": " das Pech",
+        "definition": " la malchance "
+    },
+    {
+        "text": " der W\u00fcrfel",
+        "definition": " le d\u00e9 "
+    },
+    {
+        "text": " die Spielkarten",
+        "definition": " les cartes \u00e0 jouer "
+    },
+    {
+        "text": " das Hobby",
+        "definition": " le passe-temps "
+    },
+    {
+        "text": " die Freizeit",
+        "definition": " le loisir "
+    },
+    {
+        "text": " der Spaziergang",
+        "definition": " la promenade "
+    },
+    {
+        "text": " der Stadtbummel",
+        "definition": " le tour en ville "
+    },
+    {
+        "text": " basteln, heimwerken",
+        "definition": " bricoler "
+    },
+    {
+        "text": " das Werkzeug",
+        "definition": " les outils "
+    },
+    {
+        "text": " das Taschenmesser",
+        "definition": " le canif "
+    },
+    {
+        "text": " der Sonnenschirm",
+        "definition": " le parasol "
+    },
+    {
+        "text": " sich sonnen",
+        "definition": " prendre un bain de soleil "
+    },
+    {
+        "text": " angeln",
+        "definition": " p\u00eacher"
     }
 ]
