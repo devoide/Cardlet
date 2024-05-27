@@ -83,7 +83,7 @@ class Cardlet(tk.Frame):
         """
         try:
             filename = askopenfilename()
-            f = open(filename, "r")
+            f = open(filename, "r", encoding="utf-8")
             list_cards = f.read().split("$")
             for i, card in enumerate(list_cards):
                 list_cards[i] = card.strip()
@@ -96,7 +96,7 @@ class Cardlet(tk.Frame):
                 else:
                     self.cards.append({"text": x, "definition": ""})
 
-            with open('cards.json', 'w') as file:
+            with open('cards.json', 'w', encoding="utf-8") as file:
                 json.dump(self.cards, file, indent=4)
         except FileNotFoundError:
             return []
