@@ -112,6 +112,7 @@ class Cardlet(tk.Frame):
             self.card_label_write["text"] = self.cards[self.current]["text"]
             self.answer_label["text"] = ""
             self.card_current_write["text"] = f"{self.current + 1}/{len(self.cards)}"
+            self.entry.delete(0, "end")
         except (tk.TclError, AttributeError) as e:
             pass
 
@@ -128,6 +129,7 @@ class Cardlet(tk.Frame):
             self.card_label_write["text"] = self.cards[self.current]["text"]
             self.answer_label["text"] = ""
             self.card_current_write["text"] = f"{self.current + 1}/{len(self.cards)}"
+            self.entry.delete(0, "end")
         except (tk.TclError, AttributeError) as e:
             pass
 
