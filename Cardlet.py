@@ -106,6 +106,7 @@ class Cardlet(tk.Frame):
             self.current = 0
         self.cards_label["text"] = self.cards[self.current]["text"]
         self.card_current["text"] = f"{self.current + 1}/{len(self.cards)}"
+        self.back = False
 
         try:
             self.card_label_write["text"] = self.cards[self.current]["text"]
@@ -121,6 +122,7 @@ class Cardlet(tk.Frame):
             self.current = len(self.cards) - 1
         self.cards_label["text"] = self.cards[self.current]["text"]
         self.card_current["text"] = f"{self.current + 1}/{len(self.cards)}"
+        self.back = False
 
         try:
             self.card_label_write["text"] = self.cards[self.current]["text"]
