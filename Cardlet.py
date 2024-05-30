@@ -53,7 +53,6 @@ class Cardlet(tk.Frame):
         self.new_window.title("Write")
         self.new_window.geometry("400x200")
 
-        print(self.cards)
         self.current = 0
         random.shuffle(self.shuffled_cards)
         self.card_current_write = tk.Label(self.new_window)
