@@ -2,6 +2,7 @@ import tkinter as tk
 from tkinter.filedialog import askopenfilename
 import json
 import os
+import random
 
 
 class Cardlet(tk.Frame):
@@ -17,6 +18,7 @@ class Cardlet(tk.Frame):
         else:
             self.cards = []
 
+        self.shuffled_cards = self.cards[:]
         self.current = 0
         self.back = False
 
@@ -51,13 +53,15 @@ class Cardlet(tk.Frame):
         self.new_window.title("Write")
         self.new_window.geometry("400x200")
 
+        print(self.cards)
         self.current = 0
+        random.shuffle(self.shuffled_cards)
         self.card_current_write = tk.Label(self.new_window)
-        self.card_current_write["text"] = f"{self.current + 1}/{len(self.cards)}"
+        self.card_current_write["text"] = f"{self.current + 1}/{len(self.shuffled_cards)}"
         self.card_current_write.pack()
 
         self.card_label_write = tk.Label(self.new_window, bd=3)
-        self.card_label_write["text"] = self.cards[self.current]["text"]
+        self.card_label_write["text"] = self.shuffled_cards[self.current]["text"]
         self.card_label_write.pack()
 
 
@@ -82,13 +86,16 @@ class Cardlet(tk.Frame):
 
     def check_answer(self, event=None):
         text = self.entry.get()
-        answer = self.cards[self.current]["definition"].strip().lower()
+        answer = self.shuffled_cards[self.current]["definition"].strip().lower()
         if text.strip().lower() == answer:
             self.answer_label.config(fg="lime", font=("Helvetica", 9, "bold"))
             self.answer_label["text"] = "Richtig!"
         else:
             self.answer_label.config(fg="red", font=("Helvetica", 9, "bold"))
             self.answer_label["text"] = f"Falsch: {answer}"
+
+
+
 
     def control_widgets(self):
         self.download_button = tk.Button(self.controls, text="Download")
@@ -109,9 +116,9 @@ class Cardlet(tk.Frame):
         self.back = False
 
         try:
-            self.card_label_write["text"] = self.cards[self.current]["text"]
+            self.card_label_write["text"] = self.shuffled_cards[self.current]["text"]
             self.answer_label["text"] = ""
-            self.card_current_write["text"] = f"{self.current + 1}/{len(self.cards)}"
+            self.card_current_write["text"] = f"{self.current + 1}/{len(self.shuffled_cards)}"
             self.entry.delete(0, "end")
         except (tk.TclError, AttributeError) as e:
             pass
@@ -126,9 +133,9 @@ class Cardlet(tk.Frame):
         self.back = False
 
         try:
-            self.card_label_write["text"] = self.cards[self.current]["text"]
+            self.card_label_write["text"] = self.shuffled_cards[self.current]["text"]
             self.answer_label["text"] = ""
-            self.card_current_write["text"] = f"{self.current + 1}/{len(self.cards)}"
+            self.card_current_write["text"] = f"{self.current + 1}/{len(self.shuffled_cards)}"
             self.entry.delete(0, "end")
         except (tk.TclError, AttributeError) as e:
             pass
