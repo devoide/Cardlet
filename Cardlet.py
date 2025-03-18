@@ -3,6 +3,7 @@ from tkinter.filedialog import askopenfilename
 import json
 import os
 import random
+import re
 
 
 class Cardlet(tk.Frame):
@@ -12,7 +13,8 @@ class Cardlet(tk.Frame):
         self.pack()
         if os.path.exists("cards.json"):
             try:
-                self.cards = json.load(open('cards.json'))
+                with open("cards.json", "r", encoding="utf-8") as file:
+                    self.cards = json.load(file)
             except json.JSONDecodeError:
                 self.cards = []
         else:
@@ -40,7 +42,8 @@ class Cardlet(tk.Frame):
         self.controls.grid(row=2, column=0, pady=5, padx=10)
 
     def card_widgets(self):
-        self.cards_label = tk.Label(self.card_frame, bg="black", fg="white", bd=3, wraplength=395)
+        self.cards_label = tk.Label(self.card_frame, bg="black", fg="white", bd=3, wraplength=395,
+                                    font=("Helvetica", 20))
         self.cards_label["text"] = self.cards[self.current]["text"] if self.cards else "No cards available"
         self.cards_label.place(x=0, y=1, relwidth=1, relheight=1)
 
@@ -59,10 +62,9 @@ class Cardlet(tk.Frame):
         self.card_current_write["text"] = f"{self.current + 1}/{len(self.shuffled_cards)}"
         self.card_current_write.pack()
 
-        self.card_label_write = tk.Label(self.new_window, bd=3)
+        self.card_label_write = tk.Label(self.new_window, bd=3, font=("Helvetica", 20))
         self.card_label_write["text"] = self.shuffled_cards[self.current]["text"]
         self.card_label_write.pack()
-
 
         self.entry = tk.Entry(self.new_window, width=20)
         self.entry.pack()
@@ -85,16 +87,24 @@ class Cardlet(tk.Frame):
 
     def check_answer(self, event=None):
         text = self.entry.get()
-        answer = self.shuffled_cards[self.current]["definition"].strip().lower()
-        if text.strip().lower() == answer:
+        answer = self.shuffled_cards[self.current]["definition"]
+
+        # Function to clean input (removes punctuation and bracketed words)
+        def clean_text(s):
+            s = re.sub(r"\(.*?\)", "", s)
+            s = re.sub(r"[^\w\s]", "", s)
+            return s.strip().lower()
+
+        # Clean user input and correct answer
+        cleaned_text = clean_text(text)
+        cleaned_answer = clean_text(answer)
+
+        if cleaned_text == cleaned_answer:
             self.answer_label.config(fg="lime", font=("Helvetica", 9, "bold"))
             self.answer_label["text"] = "Richtig!"
         else:
             self.answer_label.config(fg="red", font=("Helvetica", 9, "bold"))
             self.answer_label["text"] = f"Falsch: {answer}"
-
-
-
 
     def control_widgets(self):
         self.download_button = tk.Button(self.controls, text="Download")
@@ -104,6 +114,10 @@ class Cardlet(tk.Frame):
         self.write_button = tk.Button(self.controls, text="Write")
         self.write_button["command"] = self.write_window
         self.write_button.grid(row=0, column=1)
+
+        self.swap_button = tk.Button(self.controls, text="Swap")
+        self.swap_button["command"] = self.swap_cards
+        self.swap_button.grid(row=0, column=2)
 
     def next_card(self, event=None):
         if self.current < len(self.cards) - 1:
@@ -146,6 +160,17 @@ class Cardlet(tk.Frame):
         else:
             self.back = True
             self.cards_label["text"] = self.cards[self.current]["definition"]
+
+    def swap_cards(self):
+        print("Switch cards")
+        for card in self.cards:
+            card["text"], card["definition"] = card["definition"], card["text"]
+
+        self.card_current["text"] = f"{self.current + 1}/{len(self.cards)}"
+        self.cards_label["text"] = self.cards[self.current]["text"]
+
+        with open("cards.json", "w", encoding="utf-8") as file:
+            json.dump(self.cards, file, indent=4, ensure_ascii=False)
 
     def add_file(self):
         """
